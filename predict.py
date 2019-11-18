@@ -23,9 +23,9 @@ def predict(file):
   elif answer == 2:
     print("pred: Gorila")
 
-  f = open ('salida.txt','w')
-  f.write(str(answer))
-  f.close()
+  #f = open ('salida.txt','w')
+  #f.write(str(answer))
+  #f.close()
   return answer
 
 def getfilepath():
