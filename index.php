@@ -1,5 +1,3 @@
-
-?>
 <!DOCTYPE html>
 <html>
  <head>
@@ -8,7 +6,7 @@
  </head>
  <body>  
 
-   <form method="post" action="controller.php" >
+   <form method="GET" action="controller.php" >
 
 		<div class="form-group">
 		<div class="form-check">
