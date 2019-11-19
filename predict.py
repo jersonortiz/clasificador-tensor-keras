@@ -1,5 +1,10 @@
 import sys
 sys.path.insert(0,"/opt/lib/python3.6/site-packages")
+import os
+os.environ['MKL_NUM_THREADS'] = '2'
+os.environ['GOTO_NUM_THREADS'] = '2'
+os.environ['OMP_NUM_THREADS'] = '2'
+os.environ['openmp'] = 'True'
 import numpy as np
 from keras.preprocessing.image import load_img, img_to_array
 from keras.models import load_model

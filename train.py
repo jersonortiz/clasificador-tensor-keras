@@ -20,8 +20,8 @@ Parameters
 epocas=1
 longitud, altura = 150, 150
 batch_size = 32
-pasos = 100
-validation_steps = 30
+pasos = 1000
+validation_steps = 300
 filtrosConv1 = 32
 filtrosConv2 = 64
 tamano_filtro1 = (3, 3)
