@@ -5,7 +5,7 @@
 	$var = "file".$archivo.".jpg";
 	echo $var;
 	$resu="";
-	$command ="python3 predict.py 2>&1";
+	$command ="python3 predict.py ".$var." 2>&1";
 echo $command."<br>";
 	$result = exec($command,$resu);
 	echo $result;
