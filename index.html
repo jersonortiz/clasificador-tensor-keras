@@ -84,15 +84,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <div class="content-header">
       <div class="container-fluid">
         <div class="row mb-2">
-          <div class="col-sm-6">
-            <h1 class="m-0 text-dark">Starter Page</h1>
-          </div><!-- /.col -->
-          <div class="col-sm-6">
-            <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Starter Page</li>
-            </ol>
-          </div><!-- /.col -->
+
         </div><!-- /.row -->
       </div><!-- /.container-fluid -->
     </div>
@@ -130,7 +122,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                     
                   </div>
                   <div class="col-sm-2">
-                      <img src="../dist/img/pred/file04.jpg"  class="img-fluid mb-2" name="cumplim" alt="red sample"/>
+                      <img src="dist/img/pred/file04.jpg"  class="img-fluid mb-2" name="cumplim" alt="red sample"/>
                   </div>
                   <div class="col-sm-2">
                       <img src="dist/img/pred/file05.jpg" class="img-fluid mb-2" name="cumplim" alt="black sample"/>
@@ -207,7 +199,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
   function clasificar(event){
             console.log(event.target);
             let val =event.target.src.split('dist/img/pred/file')[1].split('.')[0];
-            let url = '../controller.php?cumplim='+val;
+            let url = 'controller.php?cumplim='+val;
                     let init = {
             method: 'GET',
             headers: {
