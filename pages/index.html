@@ -230,6 +230,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
         console.log(url);
 
             fetch(url,init)
+            .then((resp) => resp.json())
             .then(function(data){
               console.log(data);
             });

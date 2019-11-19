@@ -8,7 +8,7 @@
 	$command ="python3 predict.py ".$var." 2>&1";
 
 	$result = exec($command,$resu);
-	$json = json_encode($resu;
+	$json = json_encode($resu);
     print_r($json);
 
 
