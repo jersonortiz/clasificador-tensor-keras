@@ -71,15 +71,14 @@ cnn.compile(loss='categorical_crossentropy',
 
 
 
-print("generando fit")
-cnn.fit_generator(
 
+cnn.fit_generator(
     entrenamiento_generador,
     steps_per_epoch=pasos,
     epochs=epocas,
     validation_data=validacion_generador,
     validation_steps=validation_steps)
-print("guardando pesos")
+
 target_dir = './modelo/'
 if not os.path.exists(target_dir):
   os.mkdir(target_dir)
