@@ -161,6 +161,10 @@ scratch. This page gets rid of all links and provides the needed markup only.
                   <div class="col-sm-2">
                       <img src="../dist/img/pred/file12.jpg"class="img-fluid mb-2"  name="cumplim" alt="black sample"/>
                   </div>
+
+                  <div id="msjerr">
+                    
+                  </div>
                 </div>
               </div>
             </div>
@@ -232,6 +236,12 @@ scratch. This page gets rid of all links and provides the needed markup only.
             fetch(url,init)
             .then((resp) => resp.json())
             .then(function(data){
+
+            let msjdiv= document.getElementById("msjerr");
+            let cont = '<p>el animal seleccionado es un ' + data + '</p>';
+            msjdiv.insertAdjacentHTML( 'afterbegin', );
+
+
               console.log(data);
             });
 

@@ -23,11 +23,11 @@ def predict(file):
   result = array[0]
   answer = np.argmax(result)
   if answer == 0:
-    print("pred: Perro")
+    print("Perro")
   elif answer == 1:
-    print("pred: Gato")
+    print("Gato")
   elif answer == 2:
-    print("pred: Gorila")
+    print("Gorila")
 
   #f = open ('salida.txt','w')
   #f.write(str(answer))
