@@ -4,7 +4,11 @@
 	$archivo = $_GET['cumplim'];
 	$var = "file".$archivo.".jpg";
 	echo $var;
-	$result = exec("python3 predict.py".$var)
+	$resu="";
+	$command ="python3 predict.py 2>&1";
+echo $command."<br>";
+	$result = exec($command,$resu);
 	echo $result;
+	print_r($resu);
 
 ?>
